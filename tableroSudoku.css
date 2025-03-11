@@ -1,12 +1,12 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, white, black);
+    background-color: rgb(112, 112, 112);
     text-align: center;
 }
 
 header h1 {
     font-size: 2.5rem;
-    color: black;
+    color: white;
     margin-top: 20px;
 }
 
@@ -108,7 +108,7 @@ td input {
 }
 #dialog{
     position: absolute;
-    bottom: 300px;
+    bottom: 50%;
     height: 200px;
     width: 300px;
     background-color: rgb(224, 224, 224);
