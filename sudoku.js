@@ -56,6 +56,7 @@ function createBoardPage(board)
                     input.style.width = "50px";
                     input.style.height = "50px";
                     input.id ="sudoku_Td"
+                    input.maxLength="2";
                     input.value = board[i][j] === 0 ?  " " : board[i][j];
                     input.disabled = board[i][j] !== 0;
                     celda.appendChild(input);
@@ -121,9 +122,9 @@ function validateSudoku()
     let actualBoard = getBoard();
 
     if(isValidSudoku(actualBoard)){
-        alert("Felicidades, la solucion es correcta!");
+        alert("Felicidades, la solución es correcta!");
     }else{
-        alert("Tienes errores en tu solucion");
+        alert("Tienes errores en tu solución");
     }
         
 }
