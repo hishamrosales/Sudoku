@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, white, black);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: black;
+    margin-top: 20px;
+}
+
+nav {
+    background-color: #2c3e50;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+nav ul {
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li form {
+    display: inline-block;
+}
+
+nav select,
+nav input[type="submit"] {
+    border-radius: 5px;
+    cursor: grab;
+    padding: 2px;
+}
+
+
+table {
+    margin: 20px;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+}
+
+td{
+    width: 60px;
+    height: 60px;
+    border: 1px solid #999;
+    text-align: center;
+
+}
+
+td input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    background: transparent;
+
+}
+
+.rightBorder{
+    border-right: 4px solid black !important;
+}
+
+.bottomBorder{
+    border-bottom: 4px solid black !important;
+}
+
+.botones {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+
+    background-color: #2c3e50;
+
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botones:hover {
+    background-color: black;
+}
+
+.dialogButton{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+
+    background-color: #2c3e50;
+    margin-right: 10px;
+
+    border-radius: 5px;
+    cursor: pointer;
+}
+#pDialog{
+    font-size: 1.5rem;
+}
+#dialog{
+    position: absolute;
+    bottom: 300px;
+    height: 200px;
+    width: 300px;
+    background-color: rgb(224, 224, 224);
+    display: none;
+}
+.boxOne, .boxThree, .boxFive, .boxSeven, .boxNine{
+    background-color: rgb(192, 192, 192) !important;
+}

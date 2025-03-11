@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero del Sodoku</title>
+    <link rel="icon" type="image" href="https://th.bing.com/th/id/R.d6c70f074feb6ef7f087215cc8dcbc4f?rik=%2bRFfUyNlrORTAQ&pid=ImgRaw&r=0">
+    <link rel="stylesheet" href="/Sudoku/Sudoku/Styles/tableroSudoku.css">
+     <script src="/Sudoku/Sudoku/Scripts/sudoku.js" defer></script>
+    
+</head>
+<body>
+    <center><header><h1>Sudoku</h1></header></center>
+    <nav>
+        <ul>
+            <li><form action="#">
+                <label for="game">Partida</label>
+
+                <select name="gameOptions" id="game">
+                    <option value="option">Selecciona una Opción</option>
+                    <option value="nuevaPartida">Nueva Partida</option>
+                    <option value="guardarPartida">Guardar Partida</option>
+                    <option value="cargarPartida">Cargar Partida</option>
+                </select>
+
+                <input id="enviar" type="button" value="Enviar">
+                <dialog open id="dialog">
+                    <p id="pDialog">Seleccione la dificultad del Sudoku</p>
+                    <button class="dialogButton" id="easyButton">Easy</button><button id="mediumButton" class="dialogButton">Medium</button><button id="hardButton" class="dialogButton">Hard</button>
+                </dialog>
+
+            </form></li>
+
+            <li><form action="#">
+                <label for="user">Juan</label>
+
+                <select name="userOptions" id="user">
+                    <option value="option">Selecciona una Opción</option>
+                    <option value="cerrarSesion">Cerrar Sesión</option>
+                    <option value="mejoresTiempos">Mejores Tiempos</option>
+                </select>
+
+                <input type="submit" value="Enviar">
+            </form></li>
+        </ul>
+    </nav><br><br><br><br>
+<center>
+    <table id="sudokuBoard"></table>
+</center><br><br>
+<center>
+<input class="botones" type="submit" value="Validar" id="validar"> <input id="limpiar" class="botones" type="submit" value="Limpiar">
+</center>
+
+</body>
+</html>
